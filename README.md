@@ -1,5 +1,10 @@
 ### Hi there 👋
 
+- 💬 Ask me about React, Express, MongoDB & HTTP APIs
+- 📫 How to reach me: https://leifarriens.dev
+- 😄 Pronouns: he/him
+- ⚡ Fun fact: Svelte will replace React in the next 5 years
+
 <!--
 **leifarriens/leifarriens** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
