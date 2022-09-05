@@ -2,7 +2,7 @@
 
 - 💬 Ask me about React, Express, MongoDB & HTTP APIs
 - 📫 How to reach me: https://leifarriens.dev
-- 😄 Pronouns: he/him
+- ✊ Pronouns: he/him
 - ⚡ Fun fact: Svelte will replace React in the next 5 years
 
 <!--
