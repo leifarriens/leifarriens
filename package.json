@@ -2,7 +2,8 @@
   "name": "leifarriens",
   "version": "1.0.0",
   "scripts": {
-    "start": "ts-node -T index.ts"
+    "start": "ts-node -T index.ts",
+    "format": "npx prettier --single-quote --trailing-comma all --print-width 100 --write *.ts"
   },
   "repository": {
     "type": "git",
