@@ -8,7 +8,7 @@
 
 ### GitHub Stats 📈
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=leifarriens&amp;show_icons=true)
+{stats}
 
 ### Languages 🗒️
 

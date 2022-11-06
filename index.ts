@@ -8,7 +8,7 @@ const auth = process.env.ACCESS_TOKEN;
 
 const octokit = new Octokit({ auth });
 
-const ingoredLanguages = ['HTML', 'EJS', 'Pug', 'Astro', 'CSS'];
+const ingoredLanguages = ['HTML', 'EJS', 'Pug', 'Astro', 'CSS', ''];
 
 type Repo = {
   fork: boolean;
@@ -93,9 +93,13 @@ type LanguageData = {
 
   console.info('building README.md...');
 
+  const statsHtml = buildStatsHtml();
   const tableMarkdown = buildLanguageTable(languagesData);
 
-  const readme = parseReadmeTemplate([['{languages}', tableMarkdown]]);
+  const readme = parseReadmeTemplate([
+    ['{languages}', tableMarkdown],
+    ['{stats}', statsHtml],
+  ]);
 
   fs.writeFileSync('./README.md', readme);
   console.info('Done.');
@@ -128,6 +132,30 @@ function buildLanguageTable(languagesData: LanguageData) {
   }, '');
 
   return tableMarkdown;
+}
+
+function buildStatsHtml() {
+  const url = new URL('https://github-readme-stats.vercel.app/api');
+  url.searchParams.set('username', 'leifarriens');
+  url.searchParams.set('show_icons', String(true));
+  url.searchParams.set('hide_title', String(true));
+  url.searchParams.set('hide_rank', String(true));
+  url.searchParams.set('count_private', String(true));
+
+  const src = url.toString();
+
+  return String(`
+  <picture>
+    <source
+      srcset="${src}&theme=github_dark"
+      media="(prefers-color-scheme: dark)"
+    />
+    <source
+      srcset="${src}"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+    />
+    <img src="${src}" />
+  </picture>`).trim();
 }
 
 function parseReadmeTemplate(toParse: [string, string][]) {
