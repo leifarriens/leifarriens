@@ -18,6 +18,8 @@ jobs:
         run: |
           npm ci
       - name: Update README
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |-
           npm start
           cat README.md
