@@ -141,6 +141,7 @@ function buildStatsHtml() {
   url.searchParams.set('hide_title', String(true));
   url.searchParams.set('hide_rank', String(true));
   url.searchParams.set('count_private', String(true));
+  url.searchParams.set('disable_animations', String(true));
 
   const src = url.toString();
 
