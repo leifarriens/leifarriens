@@ -1,9 +1,8 @@
 ### Hi there 👋
 
-- 💬 Ask me about React, Express, MongoDB & HTTP APIs
+- 💬 Ask me about Javascript, Typescript, React & Next.js
 - 📫 How to reach me: [leifarriens.dev](https://leifarriens.dev)
 - ✊ Pronouns: he/him
-- ⚡ Fun fact: Svelte will replace React in the next 5 years
 - 🔍 I’m currently looking into [Remix](https://remix.run), [Astro](https://astro.build), [tRPC](https://trpc.io/)
 
 ### GitHub Stats 📈
@@ -24,4 +23,4 @@
 
 |TypeScript|JavaScript|SCSS|Svelte|Go|Python|PHP|Shell|Dockerfile|Rust|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|44.09%|40.77%|7.60%|6.55%|0.64%|0.12%|0.10%|0.07%|0.05%|0.02%|
+|44.31%|40.61%|7.57%|6.52%|0.64%|0.12%|0.10%|0.07%|0.05%|0.02%|
