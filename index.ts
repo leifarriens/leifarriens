@@ -98,12 +98,10 @@ type LanguageData = {
 
   const statsHtml = buildStatsHtml();
   const tableMarkdown = buildLanguageTable(languagesData);
-  const now = new Date().toISOString();
 
   const readme = parseReadmeTemplate([
     ['{languages}', tableMarkdown],
     ['{stats}', statsHtml],
-    ['{updated_at}', now],
   ]);
 
   fs.writeFileSync('./README.md', readme);

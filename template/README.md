@@ -12,5 +12,3 @@
 ### Languages 🗒️
 
 {languages}
-
-<font size=1>{updated_at}</font>
