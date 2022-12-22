@@ -39,7 +39,7 @@ type LanguageData = {
       headers: {
         Authorization: `Bearer ${auth}`,
       },
-    },
+    }
   );
 
   const repos = data.items.filter((repo: Repo) => {
@@ -73,10 +73,13 @@ type LanguageData = {
       .filter(([name]) => {
         return !ingoredLanguages.includes(name);
       })
-      .sort(([, a], [, b]) => b - a),
+      .sort(([, a], [, b]) => b - a)
   );
 
-  const totalChars = Object.values(sortedLanguages).reduce((curr, acc) => curr + acc, 0);
+  const totalChars = Object.values(sortedLanguages).reduce(
+    (curr, acc) => curr + acc,
+    0
+  );
 
   const languagesData: LanguageData = Object.entries(sortedLanguages).reduce(
     (curr, [name, value]) => {
@@ -88,17 +91,19 @@ type LanguageData = {
         },
       };
     },
-    {},
+    {}
   );
 
   console.info('building README.md...');
 
   const statsHtml = buildStatsHtml();
   const tableMarkdown = buildLanguageTable(languagesData);
+  const now = new Date().toISOString();
 
   const readme = parseReadmeTemplate([
     ['{languages}', tableMarkdown],
     ['{stats}', statsHtml],
+    ['{updated_at}', now],
   ]);
 
   fs.writeFileSync('./README.md', readme);
@@ -160,7 +165,10 @@ function buildStatsHtml() {
 }
 
 function parseReadmeTemplate(toParse: [string, string][]) {
-  let readmeTemplate = fs.readFileSync(path.join(__dirname, 'template', 'README.md'), 'utf-8');
+  let readmeTemplate = fs.readFileSync(
+    path.join(__dirname, 'template', 'README.md'),
+    'utf-8'
+  );
 
   toParse.forEach(([key, data]) => {
     readmeTemplate = readmeTemplate.replace(key, data);
