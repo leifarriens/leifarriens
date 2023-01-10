@@ -8,7 +8,8 @@ const auth = process.env.ACCESS_TOKEN;
 
 const octokit = new Octokit({ auth });
 
-const ingoredLanguages = ['HTML', 'EJS', 'Pug', 'Astro', 'CSS', ''];
+const IGNORED_LANGUAGES = ['HTML', 'EJS', 'Pug', 'Astro', 'CSS', 'Mako'];
+const MAX_LANGUAGES = 10;
 
 type Repo = {
   fork: boolean;
@@ -71,9 +72,10 @@ type LanguageData = {
   const sortedLanguages = Object.fromEntries(
     Object.entries(languages)
       .filter(([name]) => {
-        return !ingoredLanguages.includes(name);
+        return !IGNORED_LANGUAGES.includes(name);
       })
       .sort(([, a], [, b]) => b - a)
+      .filter((_, i) => i < MAX_LANGUAGES)
   );
 
   const totalChars = Object.values(sortedLanguages).reduce(
