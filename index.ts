@@ -140,7 +140,7 @@ function buildLanguageTable(languagesData: LanguageData) {
 }
 
 function buildStatsHtml() {
-  const url = new URL('https://github-readme-stats.vercel.app/api');
+  const url = new URL(process.env.README_STATS_URL ?? '');
   url.searchParams.set('username', 'leifarriens');
   url.searchParams.set('show_icons', String(true));
   url.searchParams.set('hide_title', String(true));
