@@ -3,12 +3,12 @@ import path from 'path';
 import axios from 'axios';
 import { Octokit } from 'octokit';
 import 'dotenv/config';
+import { readLangIgnore } from './utils/read-lang-ignore';
 
 const auth = process.env.ACCESS_TOKEN;
 
 const octokit = new Octokit({ auth });
 
-const IGNORED_LANGUAGES = ['HTML', 'EJS', 'Pug', 'Astro', 'CSS', 'Mako'];
 const MAX_LANGUAGES = 10;
 
 type Repo = {
@@ -25,13 +25,6 @@ type LanguageData = {
 };
 
 (async () => {
-  // const json: {
-  //   repo: string;
-  //   languages: {
-  //     [key: string]: number;
-  //   };
-  // }[] = JSON.parse(fs.readFileSync('./tmp/result.json', 'utf-8'));
-
   console.info('fetching repos...');
 
   const { data } = await axios<{ items: Repo[] }>(
@@ -69,10 +62,12 @@ type LanguageData = {
       return curr;
     }, {});
 
+  const ignoredLanguages = readLangIgnore();
+
   const sortedLanguages = Object.fromEntries(
     Object.entries(languages)
       .filter(([name]) => {
-        return !IGNORED_LANGUAGES.includes(name);
+        return !ignoredLanguages.includes(name);
       })
       .sort(([, a], [, b]) => b - a)
       .filter((_, i) => i < MAX_LANGUAGES)
