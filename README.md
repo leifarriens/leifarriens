@@ -21,6 +21,6 @@
 
 ### Languages 🗒️
 
-|TypeScript|JavaScript|SCSS|Svelte|Python|Go|Shell|PHP|Rust|Dockerfile|
+|TypeScript|JavaScript|SCSS|Svelte|Python|Go|Shell|PHP|Vue|Rust|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|48.59%|36.89%|6.72%|5.86%|1.02%|0.58%|0.16%|0.09%|0.06%|0.05%|
+|48.78%|36.77%|6.65%|5.86%|1.01%|0.57%|0.15%|0.08%|0.07%|0.06%|
