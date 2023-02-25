@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Octokit } from 'octokit';
 import 'dotenv/config';
 import { readLangIgnore } from './utils/read-lang-ignore';
+import { renderLangChart } from './utils/render-lang-chart';
 
 const auth = process.env.ACCESS_TOKEN;
 
@@ -102,6 +103,8 @@ type LanguageData = {
   ]);
 
   fs.writeFileSync('./README.md', readme);
+
+  await renderLangChart(sortedLanguages);
   console.info('Done.');
 })();
 

@@ -12,3 +12,4 @@
 ### Languages 🗒️
 
 {languages}
+![Language Chart](chart.png)
