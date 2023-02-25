@@ -15,7 +15,7 @@ const COLORS: { [key: string]: string } = {
 } as const;
 
 export async function renderLangChart(languages: { [k: string]: number }) {
-  const width = 320;
+  const width = 380;
   const height = 320;
 
   const backgroundColour = 'rgba(255,255,255,0)';
@@ -44,5 +44,4 @@ export async function renderLangChart(languages: { [k: string]: number }) {
   });
 
   fs.writeFileSync('chart.png', image);
-  console.log(image);
 }
