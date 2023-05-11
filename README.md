@@ -21,6 +21,6 @@
 
 ### Languages 🗒️
 
-|TypeScript|JavaScript|Svelte|Python|Go|Shell|PHP|Vue|Rust|Objective-C|
+|TypeScript|JavaScript|Svelte|Python|Go|Shell|PHP|Vue|Rust|Swift|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|53.99%|37.90%|6.02%|1.04%|0.60%|0.20%|0.09%|0.08%|0.06%|0.04%|
+|54.01%|37.90%|6.02%|1.04%|0.60%|0.20%|0.09%|0.08%|0.06%|0.01%|
