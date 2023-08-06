@@ -2,8 +2,7 @@
 
 - 💬 Ask me about Javascript, Typescript, React & Next.js
 - 📫 How to reach me: [leifarriens.dev](https://leifarriens.dev)
-- ✊ Pronouns: he/him
-- 🔍 I’m currently looking into [Remix](https://remix.run), [Astro](https://astro.build), [tRPC](https://trpc.io/)
+- 🔍 I’m currently looking into [Go](https://go.dev)
 
 ### GitHub Stats 📈
 
@@ -23,4 +22,4 @@
 
 |TypeScript|JavaScript|Svelte|Python|Go|Shell|PHP|Vue|Rust|Dockerfile|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|55.72%|36.31%|5.92%|1.01%|0.58%|0.23%|0.08%|0.07%|0.05%|0.01%|
+|55.69%|36.16%|5.90%|1.01%|0.81%|0.23%|0.08%|0.07%|0.05%|0.01%|
