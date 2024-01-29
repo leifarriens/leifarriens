@@ -20,6 +20,6 @@
 
 ### Languages 🗒️
 
-|TypeScript|JavaScript|Svelte|Go|Python|Shell|C#|Rust|Dockerfile|PHP|
+|TypeScript|JavaScript|Svelte|Go|Python|Shell|C#|Dockerfile|Rust|PHP|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|59.02%|30.96%|5.08%|3.18%|0.85%|0.44%|0.25%|0.08%|0.07%|0.07%|
+|58.80%|30.83%|5.06%|3.53%|0.85%|0.43%|0.25%|0.09%|0.08%|0.07%|
