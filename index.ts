@@ -15,6 +15,7 @@ type Repo = {
   fork: boolean;
   languages_url: string;
   name: string;
+  archived: boolean;
 };
 
 type LanguageData = {
