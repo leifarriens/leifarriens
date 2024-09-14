@@ -29,6 +29,7 @@ type LanguageData = {
   console.info('fetching repos...');
 
   const { data } = await axios<{ items: Repo[] }>(
+    // https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories
     'https://api.github.com/search/repositories?q=user:leifarriens&per_page=100',
     {
       headers: {
