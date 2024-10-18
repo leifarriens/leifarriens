@@ -1,8 +1,8 @@
 ### Hi there 👋
 
-- 💬 Ask me about Javascript, Typescript, React & Next.js
+- 🛠️ Mainly working with Typescript, React, Golang and AWS
 - 📫 How to reach me: [leifarriens.dev](https://leifarriens.dev)
-- 🔍 I’m currently looking into [Go](https://go.dev) & [CDK](https://github.com/aws/aws-cdk)
+- 🔍 I’m currently looking into [Kubernetes](https://kubernetes.io/)
 
 ### GitHub Stats 📈
 
@@ -22,4 +22,4 @@
 
 |TypeScript|JavaScript|Go|Svelte|Python|Shell|C|C#|Rust|Zig|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|62.68%|25.14%|6.42%|4.09%|0.70%|0.37%|0.22%|0.20%|0.12%|0.06%|
+|62.74%|25.08%|6.42%|4.09%|0.70%|0.37%|0.22%|0.20%|0.12%|0.06%|
