@@ -1,8 +1,8 @@
 ### Hi there 👋
 
-- 💬 Ask me about Javascript, Typescript, React & Next.js
+- 🛠️ Mainly working with Typescript, React, Golang and AWS
 - 📫 How to reach me: [leifarriens.dev](https://leifarriens.dev)
-- 🔍 I’m currently looking into [Go](https://go.dev) & [CDK](https://github.com/aws/aws-cdk)
+- 🔍 I’m currently looking into [Kubernetes](https://kubernetes.io/)
 
 ### GitHub Stats 📈
 
