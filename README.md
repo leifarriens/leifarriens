@@ -2,7 +2,7 @@
 
 - 🛠️ Mainly working with Typescript, React, Golang and AWS
 - 📫 How to reach me: [leifarriens.dev](https://leifarriens.dev)
-- 🔍 I’m currently looking into [The State of AI Assisted Coding]([https://kubernetes.io/](https://gist.github.com/leifarriens/5f090923cc102b6bec13dce1a7941a05))
+- 🔍 I’m currently looking into [Kubernetes](https://kubernetes.io/)
 
 ### GitHub Stats 📈
 
@@ -22,4 +22,4 @@
 
 |TypeScript|JavaScript|Go|Svelte|GDScript|Shell|Python|C|C#|Rust|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|68.94%|17.79%|5.35%|4.65%|1.53%|0.72%|0.60%|0.17%|0.16%|0.09%|
+|68.88%|17.75%|5.33%|4.77%|1.53%|0.72%|0.60%|0.17%|0.16%|0.09%|
