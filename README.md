@@ -20,7 +20,7 @@
 
 ### Languages 🗒️
 
-|TypeScript|JavaScript|Go|Svelte|Shell|Python|C|C#|Swift|Rust|
+|TypeScript|JavaScript|Go|Svelte|Swift|Shell|Python|C|C#|HCL|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|74.50%|14.58%|5.10%|4.18%|0.75%|0.48%|0.14%|0.13%|0.07%|0.07%|
+|74.07%|14.38%|5.05%|4.12%|0.80%|0.74%|0.48%|0.13%|0.13%|0.10%|
 
