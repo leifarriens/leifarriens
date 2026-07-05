@@ -2,6 +2,7 @@
 
 - 🛠️ Mainly working with Typescript, React, Golang and AWS
 - 📫 How to reach me: [leifarriens.dev](https://leifarriens.dev)
+- 🔨 Currently working on [Pantry](https://pantryapp.net)
 - 🔍 I’m currently looking into [The State of AI Assisted Coding](https://www.leifarriens.dev/blog/state-of-ai-assisted-coding)
 
 ### GitHub Stats 📈
@@ -22,5 +23,5 @@
 
 |TypeScript|JavaScript|Go|Svelte|Python|Swift|Shell|C|C#|HCL|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|74.04%|13.80%|4.99%|4.09%|1.23%|0.76%|0.73%|0.13%|0.12%|0.10%|
+|74.05%|13.80%|4.99%|4.09%|1.23%|0.76%|0.73%|0.13%|0.12%|0.10%|
 
