@@ -26,25 +26,19 @@ type LanguageData = {
 };
 
 (async () => {
-  console.info('fetching repos...');
+  const repos = await fetchAllRepos('leifarriens');
 
-  const { data } = await axios<{ items: Repo[] }>(
-    // https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories
-    'https://api.github.com/search/repositories?q=user:leifarriens&per_page=200',
-    {
-      headers: {
-        Authorization: `Bearer ${auth}`,
-      },
-    }
-  );
+  console.info(`fetched ${repos.length} repos`);
 
-  const repos = data.items.filter((repo: Repo) => {
-    return !repo.fork;
+  const ownedRepos = repos.filter((repo: Repo) => {
+    return !repo.fork && !repo.archived;
   });
 
-  const languagePromises = repos.map((repo) => getRepoLanguages(repo.name));
+  console.info(`filtered down to ${ownedRepos.length} non forked and non archived repos`);
 
   console.info('fetching repo languages...');
+
+  const languagePromises = ownedRepos.map((repo) => getRepoLanguages(repo.name));
 
   const languageResponses = await Promise.all(languagePromises);
 
@@ -106,6 +100,37 @@ type LanguageData = {
   fs.writeFileSync('./README.md', readme);
   console.info('Done.');
 })();
+
+async function fetchAllRepos(username: string): Promise<Repo[]> {
+  let repos: Repo[] = [];
+
+  let page = 1;
+  let pagesRemaining = true;
+
+  while (pagesRemaining) {
+    console.info(`fetching page ${page} of repos for ${username}`);
+
+    const response = await axios<{ items: Repo[] }>(
+      'https://api.github.com/search/repositories',
+      {
+        headers: {
+          Authorization: `Bearer ${auth}`,
+        },
+        params: {
+          q: `user:${username}`,
+          per_page: 100, // 100 is max
+          page,
+        }
+      }
+    );
+
+    repos = [...repos, ...response.data.items];
+    pagesRemaining = response.data.items.length === 100;
+    page++;
+  }
+
+  return repos;
+}
 
 async function getRepoLanguages(repo: string) {
   const { data } = await octokit.rest.repos.listLanguages({
