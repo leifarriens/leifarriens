@@ -21,7 +21,7 @@
 
 ### Languages 🗒️
 
-|TypeScript|Go|JavaScript|Python|Rust|Shell|Lua|Swift|C++|C|
+|TypeScript|Go|JavaScript|Python|Shell|Rust|Lua|Swift|C++|C|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|82.64%|5.32%|4.12%|2.91%|1.69%|1.66%|0.72%|0.61%|0.22%|0.11%|
+|82.57%|5.83%|3.84%|3.03%|1.60%|1.58%|0.68%|0.57%|0.20%|0.10%|
 
